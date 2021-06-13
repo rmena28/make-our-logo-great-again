@@ -114,10 +114,18 @@ const GameContainer = () => {
   };
   return (
     <>
-      <label className="label-message">pick an item from here</label>
-      <MemoizedList onItemDragged={onItemDragged} items={sourceList} />
-      <label className="label-message">Then drag it here</label>
-      <MemoizedList onItemDragged={onItemDragged} items={destination} />
+      <div className="list-container">
+        <div className="draggable-area">
+          <label className="label-message">Pick up the right cards</label>
+          <MemoizedList onItemDragged={onItemDragged} items={sourceList} />
+        </div>
+        <div className="droppable-area">
+          <label className="label-message">
+            ... and drop them here to make the logo great <span>again.</span>
+          </label>
+          <MemoizedList onItemDragged={onItemDragged} items={destination} />
+        </div>
+      </div>
     </>
   );
 };
