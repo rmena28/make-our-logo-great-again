@@ -25,6 +25,7 @@ This is a list of the approaches I used.
 - NO **DOM** modifications were made.
 - **React Portal** was used to render a modal (to show the results).
 - `react-router-dom` was used to handle the routing.
+- No UI library was used.
 --- 
 #### Last words
 I really enjoyed the challenge :smile: , thanks a lot for the oportunity.
