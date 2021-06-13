@@ -2,7 +2,7 @@
   "name": "game",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rmena28.github.io/make-our-logo-great-again/",
+  "homepage": ".",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
