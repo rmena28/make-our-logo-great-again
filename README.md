@@ -1,7 +1,8 @@
 # Make our logo great again.
 ### Summary
-The project was created  using `create-react-app` with the `TypeScript` template. 
-Running app:
+The project was created  using `create-react-app` with the `TypeScript` template.
+--- 
+##### Running app:
 [Make our logo great again](https://rmena-make-our-logo-great-again.netlify.app/)
 
 ----------
