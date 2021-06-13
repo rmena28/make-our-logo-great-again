@@ -2,6 +2,7 @@
   "name": "game",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://rmena28.github.io/make-our-logo-great-again/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -20,7 +21,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "CI= react-scripts build",
+    "build2": "react-scripts build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
