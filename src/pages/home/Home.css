@@ -1,0 +1,40 @@
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.title{
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+.input{
+    border: none;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: transparent;
+    height: 3em;
+    border-bottom: 0.5px solid #ccc;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+.input:focus{
+    outline: none;
+}
+.input::placeholder{
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width: 500px){
+    .title{
+        font-size: 1.1rem;
+    }
+  
+}
+
+

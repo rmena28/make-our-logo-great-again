@@ -1,0 +1,8 @@
+enum GameTypes {
+  SET_START = "SET_START",
+  SET_WRONG_PLACEMENT = "SET_WRONG_PLACEMENT",
+  SET_RESTART = "SET_RESTART",
+  SET_GAME_ENDED = "SET_GAME_ENDED"
+}
+
+export default GameTypes;

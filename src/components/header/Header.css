@@ -1,0 +1,22 @@
+.header{
+    width: '100vw';
+    /* padding: 32px; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.name{
+    font-size: 1.7rem;
+    color: #3b0078
+}
+
+.message-container{
+    display:flex;
+    padding: 16px;
+    flex-direction: column;
+
+}
+
+.message-container>.score{
+    font-size: 1.1rem;
+}
