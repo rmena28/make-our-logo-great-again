@@ -112,7 +112,6 @@ const GameContainer = () => {
 
     return destination[containerIndex].id === imageIndex;
   };
-  // console.log(destination);
   return (
     <>
       <label className="label-message">pick an item from here</label>
@@ -120,7 +119,6 @@ const GameContainer = () => {
       <label className="label-message">Then drag it here</label>
       <MemoizedList onItemDragged={onItemDragged} items={destination} />
     </>
-    // {props.children}
   );
 };
 export default GameContainer;

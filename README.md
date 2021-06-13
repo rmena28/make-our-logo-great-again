@@ -1,6 +1,7 @@
 # Make our logo great again.
 ### Summary
-The project was created  using `create-react-app` with the `TypeScript` template.
+The project was created  using `create-react-app` with the `TypeScript` template. 
+Demo
 
 ----------
 
@@ -15,7 +16,7 @@ Besides the dependencies added by `create-react-app`, the dependencies added are
 
 ----------
 
-### Tech stack
+### Approach
 This is a list of the approaches I used.
 - All the components are functional components.
 - The state management used was redux with hooks.
