@@ -9,19 +9,29 @@ const Home = () => {
   const [inputValue, setInputValue] = useState<string>("");
   const dispatch = useDispatch();
   const [modalVisible, setModalVisible] = useState(true);
-  
 
   const handleClickEvent = (event: React.MouseEvent) => {
-    dispatch(setUser(inputValue));
-    history.push("/game");
+    if (inputValue && inputValue !== "") {
+      dispatch(setUser(inputValue));
+      history.push("/game");
+    }
   };
 
   const handleInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     let currentValue = event.currentTarget.value;
     if (currentValue && currentValue !== "") {
       setInputValue(event.currentTarget.value);
-    }else{
+    } else {
+    }
+  };
 
+  const handleEnter = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    console.log(event.key==='Enter');
+    if (event.key === 'Enter') {
+      if (inputValue && inputValue !== "") {
+        dispatch(setUser(inputValue));
+        history.push("/game");
+      }
     }
   };
 
@@ -31,13 +41,13 @@ const Home = () => {
       <input
         className="input"
         type="text"
+        onKeyDown={handleEnter}
         onChange={handleInput}
         placeholder="Your name here"
       ></input>
       <button className="button" onClick={handleClickEvent}>
         Let's go
       </button>
-     
     </div>
   );
 };

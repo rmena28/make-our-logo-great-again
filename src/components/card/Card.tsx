@@ -15,6 +15,7 @@ const Card: FC<CardProps> = ({ containerInformation, onDragStart }) => {
   return (
     <div
       draggable
+      onTouchStart={event=>console.log(event)}
       onDragStart={onDragStart}
       onDragEnd={(event) => event.stopPropagation()}
       className="card"

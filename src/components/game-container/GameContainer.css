@@ -1,17 +1,31 @@
-.list-container{
-    display: flex;   
+.list-container {
+  display: flex;
+  flex-direction: column;
+}
+.draggable-area {
+  margin-top: 20px;
+}
+.droppable-area {
+  margin-top: 50px;
+}
+.label-message {
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.3);
+  /* padding-top: 50px; */
+}
+.main-labels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.label-highlight {
+  color: #cdcdcd;
+}
+@media screen and (max-width: 550px) {
+  .main-labels {
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    
+    flex-wrap: nowrap;
+  }
 }
-.draggable-area{
-    margin-top: 20px;
-}
-.droppable-area{
-    margin-top: 50px;
-}
-.label-message{
-    font-size: 1.3rem;
-    color: rgba(0, 0, 0, 0.3);
-    padding-top: 50px;
-}
-

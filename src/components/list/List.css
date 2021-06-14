@@ -1,5 +1,5 @@
 .list{
     display: flex;
-    justify-content: space-evenly;
-    padding: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
 }

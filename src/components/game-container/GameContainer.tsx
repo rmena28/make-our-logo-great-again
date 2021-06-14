@@ -116,13 +116,19 @@ const GameContainer = () => {
     <>
       <div className="list-container">
         <div className="draggable-area">
-          <label className="label-message">Pick up the right cards</label>
+          <div className="main-labels">
+            <label className="label-message">Pick up the right cards</label>
+            <label className="label-message">The faster the better!</label>
+          </div>
           <MemoizedList onItemDragged={onItemDragged} items={sourceList} />
         </div>
         <div className="droppable-area">
-          <label className="label-message">
-            ... and drop them here to make the logo great <span>again.</span>
-          </label>
+          <div className="main-labels">
+            <label className="label-message">
+              ... and drop them here to make the logo great{" "}
+              <span className="label-highlight">again.</span>
+            </label>
+          </div>
           <MemoizedList onItemDragged={onItemDragged} items={destination} />
         </div>
       </div>
